@@ -1,2 +1,13 @@
-# pytorchbook_samplecode
-PyTorch Sample Code
+# はじめてのPyTorchディープラーニング開発
+
+「はじめてのPyTorchディープラーニング開発」のサンプルコードを配布するリポジトリです。
+
+## 目次
+
+- ■Chapter1 スタートアップ
+- ■Chapter2 PyTorchの基本
+- ■Chapter3 ニューラルネットワークの基本
+- ■Chapter4 畳み込みニューラルネットワークを学ぶ　～画像分類プログラムを作る～
+- ■Chapter5 再帰型ニューラルネットワーク（時系列データの予測）　～株価予測プログラムを作る～
+- ■Chapter6 Webアプリケーションへの組み込み
+

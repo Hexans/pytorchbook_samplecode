@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoPP ~Stock Price Prediction AI~</title>
+    <style>
+        h3 {
+            color: #444444;
+            background: #f3f3f3;
+            padding: 10px 15px;
+            border-left: 10px solid #4696A3;
+            font-size: 25px;
+        }
+
+        h4 {
+            padding: 4px 10px;
+            color: #111;
+            border-bottom: 2px solid #4696A3;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <header class="header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="{{ url_for('index') }}"><img src="/static/images/logo.png" class="img-fluid"></a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br>
+                    <p>
+                        <b>StoPP</b> (Stock Price Prediction)は、株価の25日移動平均を予測するAIです。<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="{{ url_for('index') }}" method="post">
+                        <div class="form-group">
+                            <label for="data" class=""><b>過去50日分の終値を1行ずつ入力してください。</b></label>
+                            <textarea name="data" class="form-control" id="data" rows="50" cols="1">
+125.840
+119.980
+114.950
+116.620
+114.970
+115.550
+112.850
+114.380
+112.530
+110.380
+109.300
+110.000
+111.950
+110.120
+111.000
+110.710
+112.580
+114.470
+114.500
+110.560
+114.050
+115.710
+114.020
+111.160
+110.650
+107.520
+107.130
+107.840
+110.770
+111.240
+111.600
+110.330
+113.040
+111.890
+111.560
+112.880
+112.750
+113.320
+115.510
+116.780
+117.000
+117.190
+116.950
+116.710
+116.490
+116.820
+120.620
+120.630
+120.700
+120.820</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">実行</button>
+                        <button type="reset" class="btn btn-light">クリア</button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                    <h4>出力結果 例</h4>
+                    <img src="/static/images/stock_price_prediction_sample.png" class="img-fluid">
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
