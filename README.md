@@ -1,6 +1,6 @@
 # 動かしながら学ぶPyTorchプログラミング入門
 
-「動かしながら学ぶPyTorchプログラミング入門」のソースコードを配布するリポジトリです。
+「[動かしながら学ぶPyTorchプログラミング入門](https://www.amazon.co.jp/dp/B08PBH4YNT/ref=cm_sw_r_tw_dp_x_sdy0Fb4R42XKN)」のソースコードを配布するリポジトリです。
 
 ## 目次
 
